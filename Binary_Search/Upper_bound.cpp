@@ -11,15 +11,15 @@ using namespace std;
     {
         int mid = start + (end - start)/2;
 
-        if(arr[mid]<=k)
+        if(arr[mid]>=k)
         {
                 ans = mid;
-                start = mid +1;
+                end = mid -1;
         }
 
         else 
         {
-            end = mid -1;
+            start= mid +1;
         }
     }
     return ans;
