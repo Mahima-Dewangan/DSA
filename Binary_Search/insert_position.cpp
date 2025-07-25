@@ -27,12 +27,13 @@ int searchInsertPos(vector<int> arr , int k)
     return s;
 }
 
-void main()
+int main()
 {
     vector<int> arr = {1,3,5,6};
     int k;
     cout<<"enter the val you want to search";
     cin>>k;
     cout<<"\nthe search position is "<<searchInsertPos(arr , k);
+    return 0;
     
 }
