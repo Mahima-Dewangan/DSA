@@ -1,7 +1,7 @@
 #include<iostream>
 #include<vector>
 using namespace std;
- int lower_bound(vector<int> arr , int k)
+ int upper_bound(vector<int> arr , int k)
 {
     int n = arr.size();
     int start = 0;
@@ -29,10 +29,10 @@ using namespace std;
 int main()
 {
     int k;
-    cout<<" enter the number whose lower bound u want to find";
+    cout<<" enter the number whose upper bound u want to find";
     cin>>k;
 
     vector<int>arr ={1, 2, 8, 10, 10, 12, 19};
-    cout<<"\nthe lower bound is"<<lower_bound(arr,k);
+    cout<<"\nthe lower bound is present at pos"<<upper_bound(arr,k);
         return 0;
 }
