@@ -25,7 +25,7 @@ int cards(vector<int> arr , int k)
 int main()
 {
     int k;
-    cout<<"nter the max cards I can take";
+    cout<<"nter the max cards I can take"; 
     cin>>k;
     vector<int> arr={1,2,3,4,5,6,1};
     cout<<"\nthe maximum sum is"<<cards(arr ,k);
