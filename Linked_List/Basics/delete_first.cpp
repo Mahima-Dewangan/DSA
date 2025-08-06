@@ -43,6 +43,13 @@ Node *convertArrToLL(vector<int>arr)
 
 Node *delete_from_first(Node *head)
 {
+
+    // if the linked list is empty
+    if(head == NULL)
+    {
+        return head;
+    }
+    //when the linked list is not empty
     Node *temp = head;
     head = head->next;
     free(temp);
