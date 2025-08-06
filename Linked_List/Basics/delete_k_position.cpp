@@ -41,7 +41,7 @@ Node * del_k_position(Node * head , int k)
     {
         return head;
     }
-    // if the linked list has single element
+    // when we have to delete the first node itself
     if(k==1)
     {
         Node *temp = head;
