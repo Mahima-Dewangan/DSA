@@ -96,8 +96,6 @@ int main()
 {
     vector<int> arr ={5,2,8,7};
     Node * head=convertToLL(arr);
-    // // int mid = del_mid(head);
-    // cout<<"\nthe mid element is "<<del_mid(head);
     cout<<"\n Is there a cycle ? "<<detect_cycle(head);
     return 0;
 
