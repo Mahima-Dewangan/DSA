@@ -5,7 +5,7 @@ using namespace std;
 // STEP 1 : SORT THE ARRAY --------------- 0( n log n)
 // STEP 2 :  largest = arr[n-1]
 //           second_largest = -1;
-// for(int i= n-1 ; i>=0 ; i--)----------------------- O(n)
+// for(int i= n-2; i>=0 ; i--)----------------------- O(n)
 // {
  //    if(arr[i]!=largest)
 //  {       
@@ -24,7 +24,7 @@ using namespace std;
 //     // find largest element  ---------------------------o(n)
 //     int largest = arr[0];
 
-//     for(int i=0;i<arr.size();i++)
+//     for(int i=0;i<arr.size();i++)    
 //     {
 //         if(arr[i]>largest)
 //         {
