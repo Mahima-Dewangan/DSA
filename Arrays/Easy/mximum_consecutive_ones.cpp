@@ -1,5 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
+// Optimal Solution
+// TC = O(n)
+// SC= o(1)
 int max_ones(vector<int>arr)
 {
     int n = arr.size();
