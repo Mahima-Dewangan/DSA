@@ -47,6 +47,10 @@ using namespace std;
 
 
 // OPTIMAL SOLUTION   -----Dutch National Flag Algorithm
+// Intuition of the algorithm : [0 ....low-1] -> 0
+//                              [low .....mid-1]->1
+//                              [high+1.....n-1]->2
+// [mid....high] : 0,1,2 will be unsorted
 // TC = O(n)
 // SC = O(1)
 vector<int> sort_0_1_2(vector<int>arr)
@@ -57,7 +61,7 @@ vector<int> sort_0_1_2(vector<int>arr)
     int high = n-1;
     while(mid<=high)
     {
-        if(arr[mid]==0)
+        if(arr[mid]==0)    //---------------if 0 is at the mid , then everything before mid is sorted 
         {
             swap(arr[low] , arr[mid]);
             low++;
