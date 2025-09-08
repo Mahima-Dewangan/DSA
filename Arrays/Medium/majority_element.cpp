@@ -91,17 +91,18 @@ int majority_element(vector<int>arr)
     }
 
     // if the array may or may not contain the majority element : we need to verify
+    int cnt1=0;
     for(int i=0;i<arr.size();i++)  // ---------------------o(n)
     {
         if(arr[i]==el)
         {
-            cnt++;
+            cnt1++;
         }
 
     }
 
 
-    if(cnt > arr.size()/2)
+    if(cnt1 > arr.size()/2)
     {
         return el;
     }
