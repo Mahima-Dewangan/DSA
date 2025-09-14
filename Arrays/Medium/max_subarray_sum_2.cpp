@@ -1,5 +1,26 @@
 #include<bits/stdc++.h>
 using namespace std;
+// BRUTE FORCE SOLUTION
+// TC = O(n^2)
+void max_subarray_sum(vector<int>arr)
+{
+    int n = arr.size();
+     int maxi = INT_MIN;
+    for(int i=0 ; i<n;i++)
+    {
+         int sum =0;
+        for(int j=i;j<n;j++)
+        {
+            sum+=arr[j];
+            maxi = max(sum , maxi);
+        }
+    }
+
+    cout<<"the max sum is :"<<maxi;
+
+}
+// OPTIMAL SOLUTION
+// 
 void max_subarray_sum(vector<int> arr)
 {
     int sum =0; 
