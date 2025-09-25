@@ -74,7 +74,7 @@ decrease by one and so it will droop down to zero at some point;
 */
 bool detect_cycle(Node * head)
 {
-    
+     
     Node * slow = head;
     Node * fast = head;
 
